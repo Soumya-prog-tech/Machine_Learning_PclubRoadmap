@@ -79,3 +79,33 @@ Run chart, which is a line graph of data plotted over time.
 Bubble chart, which is a data visualization that displays multiple circles (bubbles) in a two-dimensional plot.
 
 Heat map, which is a graphical representation of data where values are depicted by color.
+
+## Outlier Detection: 
+EDA involves identifying outliers within the data—anomalies that deviate significantly from the rest of the data. Tools such as box plots, z-score analysis, and scatter plots help in detecting and analyzing outliers.
+
+## MISSING VALUE
+https://www.analyticsvidhya.com/blog/2021/10/handling-missing-value/
+
+There are three types of missing values : 
+1. Missing Completely At Random(MCAR)
+2. Missing At Random (MAR)
+3. Missing Not At Random (MNAR)
+
+### How to Handle Missing Data?
+
+Missing data is a common headache in any field that deals with datasets. It can arise for various reasons, from human error during data collection to limitations of data gathering methods. Luckily, there are strategies to address missing data and minimize its impact on your analysis. Here are two main approaches:
+
+Deletion: This involves removing rows or columns with missing values. This is a straightforward method, but it can be problematic if a significant portion of your data is missing. Discarding too much data can affect the reliability of your conclusions.
+Imputation: This replaces missing values with estimates. There are various imputation techniques, each with its strengths and weaknesses. Here are some common ones:
+Mean/Median/Mode Imputation: Replace missing entries with the average (mean), middle value (median), or most frequent value (mode) of the corresponding column. This is a quick and easy approach, but it can introduce bias if the missing data is not randomly distributed.
+K-Nearest Neighbors (KNN Imputation): This method finds the closest data points (neighbors) based on available features and uses their values to estimate the missing value. KNN is useful when you have a lot of data and the missing values are scattered.
+Model-based Imputation: This involves creating a statistical model to predict the missing values based on other features in the data. This can be a powerful technique, but it requires more expertise and can be computationally expensive.pen_spark.
+
+
+### ITerative Imputer
+Let’s see how IterativeImputer works. For all rows in which ‘Age’ is not missing, sci-kit learn runs a regression model. It uses ‘Sib sp’ and ‘Fare’ as the features and ‘Age’ as the target. And then, for all rows for which ‘Age’ is missing, it makes predictions for ‘Age’ by passing ‘Sib sp’ and ‘Fare’ to the training model. So it actually builds a regression model with two features and one target and then makes predictions on any places where there are missing values. And those predictions are the imputed values. as shown in MissingValue_ArticleFollowUp 
+
+## Data Transformation 
+https://www.geeksforgeeks.org/data-transformation-in-machine-learning/
+
+Outlier : A data point which is significantly different in value from the rest of the dataset. 
