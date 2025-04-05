@@ -109,3 +109,61 @@ Let’s see how IterativeImputer works. For all rows in which ‘Age’ is not m
 https://www.geeksforgeeks.org/data-transformation-in-machine-learning/
 
 Outlier : A data point which is significantly different in value from the rest of the dataset. 
+
+Week3 Day 5 : 
+
+Scikit - Optimize for Hyparameter Tuning in Machine Learning : 
+
+Hyperparamter optimization refers to performing a search in order ot discover the set of specific model configuration arguments that result in the best performance of the model on a specific dataset. 
+
+Scikit-Optimize, or skopt for short, is an open-source Python library for performing optiization tasks. 
+
+It offers efficient optimization algorithms, such as Bayesian Optimization, and can be used to find the minimum or maximum of arbitrary cost functions. 
+
+Bayesian Optimization provides a principled technique based on Bayes Theorem to direct a search of a global optimization problem that is efficient and effective. It works by building a probabilistic model of the objective function
+
+Week 3 Day 6 : 
+
+Regularization : 
+
+Regularization is a technique used in machine learning ot prevent overfitting. OVerfitting happends when amodel learns the training data too well, including the noise and outliers, which causes it to perform poorly on new data. In simple terms, regularization adds a penalty to the model for being too complex, encoraging it to stay simpler and more general. Thsi way, it's less likely to make extreme predicitons based on the noise in the data. 
+
+There primarily exist 3 types of Regularization : Lasso(L1), Ridge(L2) and Elastic Net(L1-L2) regularizations. The only differnece amongst them is what kind of penalty term is added. 
+
+1. Lasso Regression : 
+
+A regression modle which uses the L1 regularization technique is called LASSO(Least Absolute SHrinkage and Selection Operator) regression. Lasso Regression adds the "absolute value of magnitude" of the coefficient as a penalty to the loss function (L). Lasso regression also helps us achieve feature selection by penalizing the weights to approzimately equal to zero if that feature does not serve any purpose in the model 
+    $$\text{Cost} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{i=1}^{m} |w_i|$$
+
+
+2. Ridge Regression 
+
+Ridge Regression adds the "squared magnitude" of the coeffecients as a penalty term to the loss function(L)
+    $$\text{Cost} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{i=1}^{m} |w_i|^2$$
+
+
+## Week 3 Day 7 : 
+
+### Locally weighted regression : 
+
+"Paramtric" learning algorithms - Fit fixed set of parameters ( $$\theta_i$$) to data 
+
+"Non paramtric" learning algorithms - Amout of data/parameters you need to keep grows ( linearly ) with size of data. 
+
+Skipped Part : https://www.youtube.com/watch?v=het9HFqo1TQ
+
+Locally Weighted Regression : 
+
+cs229 notes page 19 for detailed notes
+
+Fit theta to minimize : 
+      $$\sum_{i=1}^mw_i(y^i - \theta^TX^i)^2$$
+       $$w_i = e^{-(x_i - x)/2}$$
+    
+https://www.geeksforgeeks.org/understanding-logistic-regression/ 
+
+### Multinomial Logistic Regression
+
+
+
+ 
